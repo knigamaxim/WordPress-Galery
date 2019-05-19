@@ -1,4 +1,4 @@
-# WordPres Galery
+# WordPress Galery
 Photo Gallery post types for WordPress theme
 
 This code will add Photo Gallery new post type in admin panel of your WordPress theme.
