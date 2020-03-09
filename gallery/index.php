@@ -7,4 +7,4 @@
  * Author: Maxim Kniga
  **/
 
-require_once dirname(__DIR__) . '/gallery.php';
+require_once dirname(__FILE__) . '/gallery.php';
