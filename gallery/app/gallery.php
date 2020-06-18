@@ -110,7 +110,7 @@ function extra_fields_box_func( $post ){
 		if(isset($_POST['img_id_sort'])){
 			$img_values = get_post($_POST['img_id_sort']);
 			$arr = explode(';', $_POST['img_id_sort']);
-			$count_pr = 1000;
+			$count_pr = count($img_values);
 			foreach ($arr as $key) {
 				if($key !== ''){
 					$img_values = get_post($key);
