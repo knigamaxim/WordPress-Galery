@@ -5,7 +5,6 @@ $(function(){
 				var reader = new FileReader();
 				reader.readAsDataURL(input.files[i]);
 				reader.onload = (e) => {
-					console.log(e.target);
 					$('.images-wrap').append('<img src="' + e.target.result + '">');
 				};
 			}
