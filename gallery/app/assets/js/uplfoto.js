@@ -24,25 +24,25 @@ jQuery(function($){
 	$( ".wrap_it_2").wrapAll('<form method="post" id="sort_all"></form>');
 	$('.btn-sel').click(function(event){
 		event.preventDefault();
-		var a = $('.del>input');
-		for (var i = 0; i < a.length; i++) {
-			$(a[i]).attr('checked', true);
+		var $input = $('.del>input');
+		for (var i = 0; i < $input.length; i++) {
+			$($input[i]).attr('checked', true);
 		}	
 	});
 	$('.btn-desel').click(function(event){
 		event.preventDefault();
-		var a = $('.del>input');
-		for (var i = 0; i < a.length; i++) {
-			$(a[i]).attr('checked', false);
+		var $input = $('.del>input');
+		for (var i = 0; i < $input.length; i++) {
+			$($input[i]).attr('checked', false);
 		}	
 	});
 	var str = '';
 	$('.del_btn').click(function(event){
 		event.preventDefault();
-		var a = $('.del>input');
-		for (var i = 0; i < a.length; i++) {
-			if ( $(a[i]).attr('checked') == 'checked' ){
-				str+= a[i].value +';';
+		var $input = $('.del>input');
+		for (var i = 0; i < $input.length; i++) {
+			if ( $($input[i]).attr('checked') == 'checked' ){
+				str+= $input[i].value +';';
 			}
 		}
 		$('.inp_arr_img').val(str);
